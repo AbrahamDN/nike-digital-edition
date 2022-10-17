@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Noka-Medium";
-  src: url("../fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.eot"); /* IE9*/
-  src: url("../fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.eot?#iefix")
+  src: url("fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.eot"); /* IE9*/
+  src: url("fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.eot?#iefix")
       format("embedded-opentype"),
     /* IE6-IE8 */
-      url("../fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.woff2")
+      url("fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.woff2")
       format("woff2"),
     /* chrome、firefox */
-      url("../fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.woff")
+      url("fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.woff")
       format("woff"),
     /* chrome、firefox */
-      url("../fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.ttf")
+      url("fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.ttf")
       format("truetype"),
     /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-      url("../fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.svg#Noka-Medium")
+      url("fonts/noka-medium/@font-face/37b6d1d511d757030d542403739b09d8.svg#Noka-Medium")
       format("svg"); /* iOS 4.1- */
 }
