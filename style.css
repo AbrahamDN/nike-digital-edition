@@ -1,4 +1,4 @@
-@import url("./fonts.css");
+@import url("fonts.css");
 
 * {
   margin: 0;
@@ -14,7 +14,7 @@ body {
   font-family: "Noka-Medium";
   font-size: 1.6rem;
   text-transform: uppercase;
-  background: #020a0f url("../assets/screen.jpg") no-repeat;
+  background: #020a0f url("assets/screen.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -96,7 +96,7 @@ ul {
   position: relative;
 }
 .landing__title::after {
-  content: url("../assets/coursor.svg");
+  content: url("assets/coursor.svg");
   position: absolute;
   bottom: -2.5rem;
   right: 0;
@@ -118,13 +118,13 @@ ul {
   padding: 2rem;
 }
 .landing__desc::before {
-  content: url("../assets/corner-tr.svg");
+  content: url("assets/corner-tr.svg");
   position: absolute;
   top: 0;
   right: 0;
 }
 .landing__desc::after {
-  content: url("../assets/corner-bl.svg");
+  content: url("assets/corner-bl.svg");
   position: absolute;
   bottom: 0;
   left: 0;
@@ -150,7 +150,7 @@ ul {
   padding: 3.3rem 0;
   background-color: #fff;
   color: #020a0f;
-  background: #fff url("../assets/brand_slogan_h.svg");
+  background: #fff url("assets/brand_slogan_h.svg");
   background-size: 46rem;
   background-repeat: repeat-x;
   background-position: center;
@@ -238,8 +238,8 @@ ul {
     -webkit-writing-mode: vertical-lr;
     padding: 0 3.3rem;
     color: #020a0f;
-    background: url("../assets/brand_slogan.svg") center center / 4.6rem
-      repeat-y rgb(255, 255, 255);
+    background: url("assets/brand_slogan.svg") center center / 4.6rem repeat-y
+      rgb(255, 255, 255);
   }
 
   .landing__badge img {
