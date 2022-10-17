@@ -1,0 +1,277 @@
+@import url("./fonts.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #fff;
+  font-family: "Noka-Medium";
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  background: #020a0f url("/assets/screen.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.page-container {
+  padding: 5.6rem 2rem;
+  max-width: 148.2rem;
+  flex: 1;
+  margin: 0 auto;
+  position: relative;
+  min-height: calc(100vh - (5.6rem * 2));
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container > main {
+  padding: 4rem 0;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav svg {
+  min-width: 2rem;
+}
+
+.nav,
+.nav__content,
+.nav__links,
+.landing,
+.footer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav {
+  width: 100%;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.nav__logo {
+  max-width: calc(29.5rem / 2);
+  height: calc(3.2rem / 2);
+  display: flex;
+}
+
+.nav__links {
+  display: none;
+}
+
+.landing {
+  position: relative;
+}
+
+.landing__content {
+  width: 100%;
+  margin: auto 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.landing__title {
+  max-width: 45ch;
+  text-align: center;
+  position: relative;
+}
+.landing__title::after {
+  content: url("/assets/coursor.svg");
+  position: absolute;
+  bottom: -2.5rem;
+  right: 0;
+}
+
+.landing__info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 3.3rem;
+}
+
+.landing__desc {
+  max-width: 47.6rem;
+  position: relative;
+  padding: 2rem;
+}
+.landing__desc::before {
+  content: url("/assets/corner-tr.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.landing__desc::after {
+  content: url("/assets/corner-bl.svg");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.landing__badge img {
+  width: calc(16.4rem / 2);
+}
+
+.footer {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.4rem;
+}
+.footer__item {
+  text-align: center;
+}
+
+.brand-branner {
+  min-height: 4rem;
+  width: 100%;
+  padding: 3.3rem 0;
+  background-color: #fff;
+  color: #020a0f;
+  background: #fff url("/assets/brand_slogan_h.svg");
+  background-size: 46rem;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+@media only screen and (min-width: 640px) {
+  .page-container {
+    padding: 5.6rem;
+  }
+
+  .nav__logo {
+    max-width: calc(29.5rem / 1.25);
+    height: calc(3.2rem / 1.25);
+  }
+
+  .landing__content {
+    width: 100%;
+    margin: auto 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  .landing__title {
+    max-width: 7ch;
+    text-align: start;
+    position: relative;
+  }
+
+  .landing__info {
+    align-items: flex-end;
+    text-align: end;
+    gap: 4rem;
+  }
+
+  .landing__badge img {
+    width: calc(16.4rem / 1.5);
+  }
+
+  .footer {
+    font-size: inherit;
+  }
+  .footer__item {
+    text-align: center;
+  }
+  .footer__item:first-child {
+    text-align: start;
+  }
+  .footer__item:last-child {
+    text-align: end;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+
+  .nav,
+  .nav__content,
+  .nav__links,
+  .landing,
+  .footer {
+    gap: 4rem;
+  }
+
+  .brand-branner {
+    min-height: 6rem;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  .app {
+    display: flex;
+  }
+
+  .brand-branner {
+    min-width: 6rem;
+    width: auto;
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    padding: 0 3.3rem;
+    color: #020a0f;
+    background: url(/assets/brand_slogan.svg) center center / 4.6rem repeat-y
+      rgb(255, 255, 255);
+  }
+
+  .landing__badge img {
+    width: calc(16.4rem / 1.25);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  body {
+    font-size: 2.6rem;
+  }
+
+  h1 {
+    font-size: 16rem;
+  }
+
+  .nav__logo {
+    max-width: 29.5rem;
+    height: 3.2rem;
+  }
+
+  .landing__info {
+    grid-template-rows: auto auto;
+  }
+
+  .landing__badge img {
+    width: 16.4rem;
+  }
+}
+
+@media only screen and (min-width: 1340px) {
+  .nav__links {
+    display: flex;
+  }
+}
